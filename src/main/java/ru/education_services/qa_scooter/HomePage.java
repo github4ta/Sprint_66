@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
-    private final String URL = "https://qa-scooter.education-services.ru/";
+    private final String BASE_URL = "https://qa-scooter.education-services.ru/";
 
     private final String disclaimerXpath = "//div[@class='Header_Disclaimer__3VEni']";
 
@@ -15,7 +15,7 @@ public class HomePage {
     }
 
     public void open() {
-        driver.get(URL);
+        driver.get(BASE_URL);
     }
 
     public String getTextDisclaimer() {
